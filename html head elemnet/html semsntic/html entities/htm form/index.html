@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <!-- TEXT -->
+    <form>
+    <label for="ad">Adınz:</label><br>
+    <input type="text" id="ad" name="ad">
+    <br>
+    <hr>
+    <label for="soyad">Soyadınız:</label><br>
+    <input type="text" id="soyad" name="soyad">
+    </form>
+    <!-- Radio Buttonu -->
+    <form>
+     <input type="radio" id="html"
+     name="language" value="HTML">
+     <label for="html">HTML</label><br>  
+     <input type="radio" id="CSS"
+     name="language" value="CSS">
+     <label for="CSS">CSS</label> <br>
+
+     <input type="radio" id="javascript" name="language">
+     <label for="javascript">javascript</label>
+    </form>
+    <br>
+    <!-- CHECKBOX -->
+    <form>
+    <input type="checkbox" id="bisiklet" name="bisiklet" value="bisiklet">
+    <label for="bisiklet">Bisiklet</label>
+    <input type="checkbox" id="araba" name="araba" value="=araba">
+    <label for="araba">Araba</label>
+    <input type="checkbox" id="uçak" name="uçak" value="uçak">
+    <label for="uçak">Uçak</label>
+    </form>
+    <form>
+      <label>İsim</label> 
+      <input type="text"><br> 
+      <label>soyisim</label>
+      <input type="text"><br>
+      <input type="submit" value="button">
+    </form>
+    <br>
+
+    <!-- Dropbox -->
+    <label for="cars">Hangi Aracı Tercih Edersiniz</label>
+    <select id="cars" name="cars" size="3" multiple>
+    <option value="volvo">Volvo</option>    
+    <option value="ford">Ford</option>    
+    <option value="audi">Audi</option>    
+    </select>
+    <input type="submit" value="gönder">
+   <br> 
+</from>
+
+    
+<br>
+    <!-- Textarea -->
+    <from>
+        <textarea name="massege" rows="10" cols="30">
+        İstediğiniz Yorumu Buraya Ekleyin
+
+    </textarea><br>
+    <input type="submit" value="submit">
+    </from><br>
+    <br>
+    <button type="button" onclick="alert('hello world!')">Click me!</button><br> <br> <br>
+
+   <form>
+    <fieldset>
+        <legend>Personel</legend>
+       <label>first name:</label>
+       <input type="text"><br>
+       <label>last namae:</label>
+       <input type="text">
+    </fieldset>
+   </form>
+    
+   <h2>Datalist Elemanlar</h2>
+   <form>
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="internet explorer">
+        <option value="firefox">
+        <option value="chrome">
+        <option value="safari">
+        <option value="opera">
+    </datalist>
+    <input type="submit">
+   </form><br>
+
+   <form>
+    <label>username:</label><br>
+    <input type="text"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" namae="pwd">
+   </form>
+
+    <label for="color">Favori Renk Seçimi</label>
+    <input type="color" id="color" name="color"><br><br>
+
+    <form>
+        <label for="doğum günü">Doğum Günü</label> 
+        <input type="date" id="dgunu">
+        <input type="reset"><br><br>
+    </form>
+    <label for="dtemax">2023-12-31 önce tarih gir</label>
+    <input type="date" id="datemax" max="2023-12-31"><br><br>
+    <label for="datemin">1970-01-01 den sonra tarih gir</label>
+    <input type="date" id="datemin" min="1970-01-01"><br><br>
+
+    <label>gün-saat gir</label>
+    <input type="datetime-local"><br><br>
+    <from>
+      <label>Email Giriniz</label>
+      <input type="email"> 
+      <input type="submit" value="submit">
+    </from><br><br>
+    <label>Select a file:</label><br>
+    <input type="file" id="file"><br><br>
+
+    <label>Miktar(1-5 arasında)</label>
+    <input type="number" min="1" max="5"><br><br>
+    <label>Miktar</label>
+    <input type="number" min="0" max="100"
+    step="10" value="30"><br><br>
+
+
+    <label>Volume(0-50)</label>
+    <input type="range" name="vol" min="0" max="20" value="10" step="10"><br><br>
+
+    <form>
+    <label>İsim</label> 
+    <input type="text" value="Umut" readonly size="30"> <br><br>
+    <label>Soyisim</label>
+    <input type="text" value="Erol" disabled><br><br>
+    <form>
+        <input type="text" maxlength="5" required>
+        <input type="submit" value="submit">
+    </form>
+    
+    <button type="button"disabled>button </button>
+    
+
+   <form>
+    <label>ülke Kodu:</label>
+    <input type="text" pattern="[A-Za-z]" (3) title="geçerli üç harf giriniz">
+    <input type="submit" value="submit">
+   </form>
+
+   <br><br>
+</body>
+</html>
